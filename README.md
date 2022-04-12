@@ -27,7 +27,7 @@ $ composer install
 ```
 5. Copy the .env.example and rename it to .env
 ```
-$ cp .env.example .en
+$ cp .env.example .env
 ```
 6. Change the following lines to reflect your database connection information
 ```
