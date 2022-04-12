@@ -95,3 +95,22 @@ This must be added to the headers to authenticate API calls
 ```
 Authorization: "Bearer access_token"
 ```
+## Scheduled Task for Delayed orders
+I have created a console command that hadles the checking for delayed orders and updating the delayed_orders table in ``` app/Console/Commands/UpdateDelayedOrders.php  ```. 
+The command can be called at will on the console as below:
+```
+$ php artisan orders:update-delayed-orders
+```
+I have also scheduled the command to run every minute in ```app/Console/Kernel.php```
+
+Normally you would have to add an entry in the cron table to invoke this tasks as follows:
+```
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+```
+
+We can mimick this locally with the following command:
+```
+$ php artisan schedule:work
+```
+
+ 
