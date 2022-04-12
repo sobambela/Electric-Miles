@@ -14,7 +14,7 @@ class AddStatusColumnToOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->string('status', 10)->after('billing_address'); 
+            $table->string('status', 10)->after('billing_address')->nullable(); 
         });
     }
 

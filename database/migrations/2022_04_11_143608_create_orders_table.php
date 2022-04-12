@@ -21,7 +21,7 @@ class CreateOrdersTable extends Migration
             $table->string('billing_address');
             $table->timestamps();
 
-            $table->foreign('customer_id')->references('id')->on('users')->onDelete('cascade');
+            // $table->foreign('customer_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
