@@ -115,7 +115,7 @@ $ php artisan schedule:work
 
 ## Testing
 
-To run the feature test suite, locate ```tests/Feature/```, run the following command inside the project root.
+To run the feature test suite, located at ```tests/Feature/```, run the following command inside the project root.
 ```
 $ vendor/bin/phpunit
 ``` 
