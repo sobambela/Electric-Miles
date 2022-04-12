@@ -75,7 +75,7 @@ POST: http://127.0.0.1:8000/oauth/token
 PostFields:
 {
   "grant_type": "password",
-  "client_id": "2",           // From Step 9
+  "client_id": "2",                           // From Step 9
   "client_secret": "from-step-9-above",       // From Step 9,
   "username":"test@test.com",
   "password":"password",
