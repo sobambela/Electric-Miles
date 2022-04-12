@@ -66,7 +66,7 @@ $ php artisan serve
 ```
 
 ## Usage
-### Inside the root of the project folder I have placed a POSTMAN collection that has all the endpoints with descriptive titles.
+### Inside the root of the project folder I have placed a POSTMAN collection (```ElecticMilesCodingTest.postman_collection```) that has all the endpoints with descriptive titles.
 
 ###  Example, Get access token.
 An access token is obtained by making a POST request to the /oauth/token endpoint with post fields as the example below:
